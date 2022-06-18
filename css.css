@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container form {
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+
+form h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+input {
+    height: 50px;
+    width: 400px;
+    outline: none;
+    border: 1px solid #dadce0;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-size: inherit;
+    color: #202124;
+}
+
+.input-form {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    pointer-events: none;
+    position: absolute;
+    padding: 0px 5px;
+    left: 10px;
+    top: 50%;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
+.input-form input:focus {
+    border: 2px solid #1a73e8;
+}
+
+.input-form input:focus+label,
+.input-form input:valid+label {
+    top: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s;
+    color: #1a73e8;
+}
+
+form>input {
+    color: #fff;
+    font-weight: 500;
+    background-color: #1a73e8;
+}
+form>input:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+table  thead tr:hover{
+    opacity: 0.8;
+}
+table {
+    border: 2px solid #1a73e8;
+}
+tr td button{
+    background-color: #1a73e8;
+    border: #1a73e8;
+    color: #fff;
+}
